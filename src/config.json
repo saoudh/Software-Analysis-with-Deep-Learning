@@ -1,0 +1,34 @@
+{
+  "alg": {
+    "train_episodes": 1,
+    "batch_size": 20,
+    "display_step":1
+  },
+  "RNN": {
+    "dropout":0.5,
+    "learning_rate": 0.01,
+    "input_length":1,
+    "layers": {
+      "layer0": 128,
+      "layer1": 64
+    },
+    "embedding":{
+      "used":true
+    }
+  },
+  "DNN": {
+    "dropout":0.5,
+    "learning_rate": 0.001,
+    "layers": {
+      "layer0": 50,
+      "layer1":30
+    }
+  },
+  "ngram": {
+    "length": 4
+  },
+  "cbow": {
+    "length": 3,
+    "max_hole_size": 3
+  }
+}
