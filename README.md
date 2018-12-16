@@ -2,13 +2,13 @@
 
 ## Installation
 The completion process can be run with the trained model without modification in the code by executing runner.py from the terminal and from the directory CourseProject. 
-´´´
+```
 python3 -m src.runner
-´´´
+```
 To train the model and overwrite the old model files, the variable use_stored_model in runner.py has to be set to False first.
 
 ## Requirements
-´´´
+```
 keras
 tensorflow
 
