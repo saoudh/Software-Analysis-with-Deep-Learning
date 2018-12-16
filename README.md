@@ -11,7 +11,7 @@ To train the model and overwrite the old model files, the variable use_stored_mo
 ```
 keras
 tensorflow
-
+```
 ## 1 Approach:
 The algorithm of this implementation runs over several phases with different methods. It first predicts the hole size and then predicts the missing tokens of the hole.
 ### 1.1 Hole size prediction:
