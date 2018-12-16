@@ -3,7 +3,7 @@ from os.path import join, isfile
 import json
 from random import randint
 import sys
-from code_completion import Code_Completion
+from src.code_completion import Code_Completion
 
 #########################################
 ## START of part that students may change
