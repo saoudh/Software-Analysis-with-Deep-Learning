@@ -1,5 +1,17 @@
 # Software-Analysis-with-Deep-Learning
 
+## Installation
+The completion process can be run with the trained model without modification in the code by executing runner.py from the terminal and from the directory CourseProject. 
+´´´
+python3 -m src.runner
+´´´
+To train the model and overwrite the old model files, the variable use_stored_model in runner.py has to be set to False first.
+
+##Requirements
+´´´
+keras
+tensorflow
+
 ## 1 Approach:
 The algorithm of this implementation runs over several phases with different methods. It first predicts the hole size and then predicts the missing tokens of the hole.
 ### 1.1 Hole size prediction:
@@ -22,3 +34,5 @@ The training is run only over one epoch due to high usage of processor resources
 ## 4 Possible further improvements:
 Methods which could further improve the performance is the additional usage of ngram probability estimation and to take the joint prediction of it and RNN, like adapted in the recommended paper for this course. A bad performance for ngram estimation would have bad impact on the total performance. The same is true for using CBOW probability estimation additionally to the Feed Forward Neural Network prediction of the hole size. Word Embeddings could also lead to a performance increase.
 An appropriate Word Embedding could improve the performance. There is a Python Word Embedding available, but no Javascript, which could still lead to higher performance
+
+
