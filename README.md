@@ -7,7 +7,7 @@ python3 -m src.runner
 ´´´
 To train the model and overwrite the old model files, the variable use_stored_model in runner.py has to be set to False first.
 
-##Requirements
+## Requirements
 ´´´
 keras
 tensorflow
