@@ -31,6 +31,9 @@ Increasing number of LSTM-Layer and dropout didn’t have a significant impact o
 ### 3.2 Performance
 The RNN next token prediction has an accuracy of over 60 % and the DNN hole size prediction has an average accuracy of 50 %. The overall accuracy is about 25%.
 The training is run only over one epoch due to high usage of processor resources. More epochs could lead to higher performance
+
+![results](https://github.com/saoudh/Software-Analysis-with-Deep-Learning/blob/master/result.png)
+
 ## 4 Possible further improvements
 Methods which could further improve the performance is the additional usage of ngram probability estimation and to take the joint prediction of it and RNN, like adapted in the recommended paper for this course. A bad performance for ngram estimation would have bad impact on the total performance. The same is true for using CBOW probability estimation additionally to the Feed Forward Neural Network prediction of the hole size. Word Embeddings could also lead to a performance increase.
 An appropriate Word Embedding could improve the performance. There is a Python Word Embedding available, but no Javascript, which could still lead to higher performance
